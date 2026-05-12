@@ -82,44 +82,32 @@
     <div class="grid">
       <div class="card">
         <h3>Multi-Sensor Remote Sensing</h3>
-        <p>
-          Optical, SAR, and LiDAR data fusion for large-scale environmental monitoring.
-        </p>
+        <p>Optical, SAR, and LiDAR data fusion for large-scale environmental monitoring.</p>
       </div>
 
       <div class="card">
         <h3>GeoAI & Explainable AI</h3>
-        <p>
-          Spatial machine learning, SHAP, GeoShapley, and interpretable geospatial modeling.
-        </p>
+        <p>Spatial machine learning, SHAP, GeoShapley, and interpretable geospatial modeling.</p>
       </div>
 
       <div class="card">
         <h3>Forest Structure & Biomass</h3>
-        <p>
-          Canopy height, canopy cover, and aboveground biomass mapping using GEDI and satellite data.
-        </p>
+        <p>Canopy height, canopy cover, and aboveground biomass mapping using GEDI and satellite data.</p>
       </div>
 
       <div class="card">
         <h3>Wildfire & Hazard Risk</h3>
-        <p>
-          Wildfire-treatment outcomes, infrastructure exposure, disturbance ecology, and resilience.
-        </p>
+        <p>Wildfire-treatment outcomes, infrastructure exposure, disturbance ecology, and resilience.</p>
       </div>
 
       <div class="card">
         <h3>Urban & Coastal Systems</h3>
-        <p>
-          Local Climate Zones, urban heat, shoreline change, land cover change, and coastal resilience.
-        </p>
+        <p>Local Climate Zones, urban heat, shoreline change, land cover change, and coastal resilience.</p>
       </div>
 
       <div class="card">
         <h3>Scalable Geospatial Computing</h3>
-        <p>
-          Cloud, HPC, Google Earth Engine, and reproducible spatial data pipelines.
-        </p>
+        <p>Cloud, HPC, Google Earth Engine, and reproducible spatial data pipelines.</p>
       </div>
     </div>
   </section>
@@ -229,21 +217,18 @@
 
   <!-- Education -->
   <section id="education" class="education-section">
-    <h2 class="fancy-title education-title">Education</h2>
+    <h2 class="education-main-title">Education</h2>
 
     <div class="education-grid">
 
       <div class="education-card">
-        <img src="gmu-logo.jpg" alt="George Mason University logo" class="edu-logo" />
+        <div class="edu-logo-box">
+          <img src="gmu-logo.jpg" alt="George Mason University logo" class="edu-logo" />
+        </div>
 
         <h3>George Mason University</h3>
-
-        <div class="degree-badge">Ph.D.</div>
-
-        <h4>Earth Systems & Geoinformation Sciences</h4>
-
+        <p class="degree-name">Ph.D. in Earth Systems & Geoinformation Sciences</p>
         <p class="edu-date">Aug 2021 – May 2024</p>
-
         <p class="edu-location">Fairfax, VA, USA</p>
 
         <p class="edu-thesis">
@@ -252,16 +237,13 @@
       </div>
 
       <div class="education-card">
-        <img src="cmu-logo.png" alt="Central Michigan University logo" class="edu-logo" />
+        <div class="edu-logo-box">
+          <img src="cmu-logo.png" alt="Central Michigan University logo" class="edu-logo" />
+        </div>
 
         <h3>Central Michigan University</h3>
-
-        <div class="degree-badge">Master's Degree</div>
-
-        <h4>Geographic Information Sciences</h4>
-
+        <p class="degree-name">M.S. in Geographic Information Sciences</p>
         <p class="edu-date">Aug 2018 – May 2021</p>
-
         <p class="edu-location">Mount Pleasant, MI, USA</p>
 
         <p class="edu-thesis">
@@ -270,16 +252,13 @@
       </div>
 
       <div class="education-card">
-        <img src="khulna-logo.jpg" alt="Khulna University logo" class="edu-logo" />
+        <div class="edu-logo-box">
+          <img src="khulna-university-vector-logo-design-sreelog.jpg" alt="Khulna University logo" class="edu-logo ku-logo" />
+        </div>
 
         <h3>Khulna University</h3>
-
-        <div class="degree-badge">Bachelor's Degree</div>
-
-        <h4>Urban & Regional Planning</h4>
-
+        <p class="degree-name">B.S. in Urban & Regional Planning</p>
         <p class="edu-date">Jan 2014 – Dec 2017</p>
-
         <p class="edu-location">Khulna, Bangladesh</p>
 
         <p class="edu-thesis">
@@ -291,81 +270,87 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="section">
-    <h2>Selected Projects</h2>
+  <section id="projects" class="project-section-dark">
+    <h2 class="fancy-title project-title">Selected Projects</h2>
 
-    <div class="project-grid">
+    <div class="portfolio-project-grid">
 
-      <div class="project-card">
-        <div class="project-visual">Forest Structure Mapping</div>
-        <h3>High-Resolution Forest Canopy Height & Biomass Mapping</h3>
-        <p>
-          Developed annual 10 m canopy height, canopy cover, and aboveground biomass products
-          using GEDI LiDAR and multi-sensor remote sensing for forest monitoring and wildfire-treatment outcome assessment.
-        </p>
-        <p><strong>Data:</strong> GEDI, Landsat, Sentinel, topography, climate variables</p>
-        <p><strong>Methods:</strong> Multi-sensor fusion, machine learning, spatial validation, uncertainty analysis</p>
-        <p><strong>Tools:</strong> Python, Google Earth Engine, XGBoost, ArcGIS Pro, HPC</p>
+      <div class="portfolio-project-card">
+        <div class="project-placeholder">Forest Structure Mapping</div>
+        <div class="portfolio-project-content">
+          <h3>Forest Canopy Height & Biomass Mapping</h3>
+          <p>
+            Developed annual 10 m canopy height, canopy cover, and aboveground biomass products
+            using GEDI LiDAR and multi-sensor remote sensing to support forest monitoring and
+            wildfire-treatment outcome assessment.
+          </p>
+          <a href="#" class="learn-more-btn">Learn More</a>
+        </div>
       </div>
 
-      <div class="project-card">
-        <div class="project-visual">Wildfire Risk</div>
-        <h3>Wildfire Risk and Transmission Line Exposure Mapping</h3>
-        <p>
-          Built geospatial workflows to evaluate wildfire and wind-related exposure along power
-          transmission corridors, supporting infrastructure resilience and hazard risk decision-making.
-        </p>
-        <p><strong>Data:</strong> Fire risk layers, wind data, transmission lines, vegetation, terrain</p>
-        <p><strong>Methods:</strong> Spatial overlay, risk modeling, exposure analysis, buffer-based summaries</p>
-        <p><strong>Tools:</strong> Python, GeoPandas, ArcGIS Pro, raster processing</p>
+      <div class="portfolio-project-card">
+        <div class="project-placeholder">Wildfire Risk</div>
+        <div class="portfolio-project-content">
+          <h3>Wildfire Risk & Transmission Line Exposure</h3>
+          <p>
+            Built geospatial workflows to evaluate wildfire and wind-related exposure along
+            power transmission corridors, supporting infrastructure resilience and hazard
+            risk decision-making.
+          </p>
+          <a href="#" class="learn-more-btn">Learn More</a>
+        </div>
       </div>
 
-      <div class="project-card">
-        <div class="project-visual">Urban Climate</div>
-        <h3>Automated Local Climate Zone Mapping</h3>
-        <p>
-          Produced a scalable framework for 25 m Local Climate Zone mapping using multi-source
-          remote sensing, decision rules, and spatial machine learning across large urban extents.
-        </p>
-        <p><strong>Data:</strong> Remote sensing, land cover, building, terrain, and urban morphology variables</p>
-        <p><strong>Methods:</strong> Decision rules, spatial ML, transfer learning, large-scale classification</p>
-        <p><strong>Tools:</strong> Google Earth Engine, Python, HPC, machine learning</p>
+      <div class="portfolio-project-card">
+        <div class="project-placeholder">Urban Climate</div>
+        <div class="portfolio-project-content">
+          <h3>Automated Local Climate Zone Mapping</h3>
+          <p>
+            Produced a scalable 25 m Local Climate Zone mapping framework using multi-source
+            remote sensing, decision rules, spatial machine learning, and large-scale
+            geospatial computing.
+          </p>
+          <a href="#" class="learn-more-btn">Learn More</a>
+        </div>
       </div>
 
-      <div class="project-card">
-        <div class="project-visual">Agricultural Digital Twin</div>
-        <h3>Rapid Rice Yield Estimation</h3>
-        <p>
-          Developed a machine learning pipeline for rice yield forecasting using integrated satellite imagery
-          and meteorological data for agricultural monitoring in the Hindu-Kush Himalaya region.
-        </p>
-        <p><strong>Data:</strong> Satellite imagery, vegetation indices, weather, crop production data</p>
-        <p><strong>Methods:</strong> Feature engineering, ML regression, operational monitoring</p>
-        <p><strong>Tools:</strong> Python, remote sensing, Google Earth Engine, machine learning</p>
+      <div class="portfolio-project-card">
+        <div class="project-placeholder">Agricultural Digital Twin</div>
+        <div class="portfolio-project-content">
+          <h3>Rapid Rice Yield Estimation</h3>
+          <p>
+            Developed a machine learning pipeline for rice yield forecasting using integrated
+            satellite imagery, vegetation indices, meteorological data, and reproducible
+            remote sensing workflows.
+          </p>
+          <a href="#" class="learn-more-btn">Learn More</a>
+        </div>
       </div>
 
-      <div class="project-card">
-        <div class="project-visual">Mangrove Blue Carbon</div>
-        <h3>Sundarbans Blue-Carbon Monitoring</h3>
-        <p>
-          Developed 10 m canopy height and biomass products for the Sundarbans mangrove forest
-          to support tropical coastal ecosystem monitoring and blue-carbon assessment.
-        </p>
-        <p><strong>Data:</strong> GEDI LiDAR, Landsat, Sentinel, SAR, environmental covariates</p>
-        <p><strong>Methods:</strong> Multi-sensor fusion, biomass modeling, temporal mapping</p>
-        <p><strong>Tools:</strong> Python, Google Earth Engine, machine learning</p>
+      <div class="portfolio-project-card">
+        <div class="project-placeholder">Mangrove Blue Carbon</div>
+        <div class="portfolio-project-content">
+          <h3>Sundarbans Blue-Carbon Monitoring</h3>
+          <p>
+            Developed 10 m canopy height and biomass products for the Sundarbans mangrove
+            forest to support blue-carbon monitoring, coastal ecosystem assessment, and
+            tropical forest mapping.
+          </p>
+          <a href="#" class="learn-more-btn">Learn More</a>
+        </div>
       </div>
 
-      <div class="project-card">
-        <div class="project-visual">Urban Heat & Equity</div>
-        <h3>Urban Heat, Tree Canopy, and Vulnerability Mapping</h3>
-        <p>
-          Integrated satellite-derived land surface temperature, tree canopy indicators, and social vulnerability
-          data to identify neighborhoods with overlapping climate and environmental justice burdens.
-        </p>
-        <p><strong>Data:</strong> Landsat LST, ACS, CDC SVI, canopy data, urban indicators</p>
-        <p><strong>Methods:</strong> Index development, spatial analysis, clustering, equity mapping</p>
-        <p><strong>Tools:</strong> ArcGIS Pro, Python, Google Earth Engine</p>
+      <div class="portfolio-project-card">
+        <div class="project-placeholder">Urban Heat & Equity</div>
+        <div class="portfolio-project-content">
+          <h3>Urban Heat, Tree Canopy & Vulnerability</h3>
+          <p>
+            Integrated satellite-derived land surface temperature, tree canopy indicators,
+            and social vulnerability data to identify neighborhoods with overlapping
+            environmental and climate burdens.
+          </p>
+          <a href="#" class="learn-more-btn">Learn More</a>
+        </div>
       </div>
 
     </div>
@@ -378,30 +363,22 @@
     <div class="grid">
       <div class="card">
         <h3>10 m Forest Structure Products</h3>
-        <p>
-          Canopy height, aboveground biomass density, and canopy cover datasets for California and Arizona.
-        </p>
+        <p>Canopy height, aboveground biomass density, and canopy cover datasets for California and Arizona.</p>
       </div>
 
       <div class="card">
         <h3>Sundarbans Mangrove Products</h3>
-        <p>
-          Annual 10 m canopy height and biomass products for blue-carbon monitoring.
-        </p>
+        <p>Annual 10 m canopy height and biomass products for blue-carbon monitoring.</p>
       </div>
 
       <div class="card">
         <h3>CONUS Local Climate Zone Dataset</h3>
-        <p>
-          25 m Local Climate Zone dataset for large-scale urban climate and morphology analysis.
-        </p>
+        <p>25 m Local Climate Zone dataset for large-scale urban climate and morphology analysis.</p>
       </div>
 
       <div class="card">
         <h3>Agricultural Forecasting Dataset</h3>
-        <p>
-          In-season crop harvest timing and yield forecasting products for agricultural digital twin research.
-        </p>
+        <p>In-season crop harvest timing and yield forecasting products for agricultural digital twin research.</p>
       </div>
     </div>
   </section>
