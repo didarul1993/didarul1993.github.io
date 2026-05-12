@@ -196,34 +196,81 @@ header {
   margin-bottom: 12px;
 }
 
-/* Expertise and skill cards */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
-  gap: 22px;
+/* Improved Core Expertise */
+.expertise-section {
+  background: #f7f9fb;
+  padding: 80px 24px;
+  max-width: 1180px;
+  margin: auto;
 }
 
-.card {
+.expertise-section h2,
+.skills-section h2,
+.experience-section h2 {
+  font-size: 34px;
+  color: #0f172a;
+  margin-bottom: 34px;
+  border-bottom: 3px solid #38bdf8;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.expertise-card {
   background: white;
-  padding: 24px;
-  border-radius: 12px;
-  box-shadow: 0 5px 18px rgba(15, 23, 42, 0.08);
-  border-top: 4px solid #38bdf8;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  border: 1px solid #e5e7eb;
+  position: relative;
+  overflow: hidden;
   transition: 0.3s;
 }
 
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.13);
+.expertise-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #0f172a, #38bdf8);
 }
 
-.card h3 {
-  margin-bottom: 12px;
+.expertise-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.14);
+}
+
+.expertise-icon {
+  display: inline-block;
+  background: #e0f2fe;
+  color: #0369a1;
+  font-weight: 800;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+.expertise-card h3 {
+  font-size: 21px;
   color: #0f172a;
-  font-size: 19px;
+  margin-bottom: 12px;
 }
 
-/* Dark Featured Projects */
+.expertise-card p {
+  color: #475569;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+/* Featured Projects */
 .project-section-dark {
   background: #1f2d34;
   color: white;
@@ -392,19 +439,117 @@ header {
   box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
 }
 
-/* Experience */
-.timeline-item {
-  background: white;
-  padding: 24px;
-  border-left: 5px solid #38bdf8;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  box-shadow: 0 5px 18px rgba(15, 23, 42, 0.08);
+/* Improved Skills */
+.skills-section {
+  background: #0f172a;
+  padding: 80px 24px;
 }
 
-.timeline-item h3 {
+.skills-section h2 {
+  color: white;
+  display: block;
+  max-width: 1180px;
+  margin: 0 auto 34px;
+  width: fit-content;
+}
+
+.skills-wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  gap: 22px;
+}
+
+.skill-group {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  padding: 24px;
+  border-radius: 18px;
+}
+
+.skill-group h3 {
+  color: #bae6fd;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tags span {
+  background: white;
   color: #0f172a;
+  padding: 9px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Improved Experience Timeline */
+.experience-section {
+  background: #f7f9fb;
+  max-width: 1180px;
+  margin: auto;
+  padding: 80px 24px;
+}
+
+.experience-timeline {
+  position: relative;
+  display: grid;
+  gap: 24px;
+}
+
+.experience-item {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.experience-date {
+  background: #0f172a;
+  color: white;
+  padding: 14px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.16);
+}
+
+.experience-content {
+  background: white;
+  padding: 24px 26px;
+  border-radius: 16px;
+  border-left: 5px solid #38bdf8;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.experience-content h3 {
+  color: #0f172a;
+  font-size: 22px;
   margin-bottom: 6px;
+}
+
+.experience-content h4 {
+  color: #0369a1;
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+.experience-location {
+  color: #64748b !important;
+  font-style: italic;
+  margin-bottom: 12px !important;
+}
+
+.experience-content p {
+  color: #374151;
+  font-size: 16.5px;
+  line-height: 1.7;
 }
 
 /* Education */
@@ -583,6 +728,10 @@ footer p {
     font-size: 16.5px;
   }
 
+  .expertise-grid {
+    grid-template-columns: 1fr;
+  }
+
   .portfolio-project-grid {
     grid-template-columns: 1fr;
   }
@@ -593,6 +742,14 @@ footer p {
 
   .data-product-grid {
     grid-template-columns: 1fr;
+  }
+
+  .experience-item {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-date {
+    width: fit-content;
   }
 
   .education-grid {
