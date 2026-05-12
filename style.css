@@ -238,6 +238,99 @@ header {
   margin-bottom: 6px;
 }
 
+/* Education section with logos */
+.education-section {
+  background: #1f2d34;
+  color: white;
+  text-align: center;
+  padding: 85px 24px;
+}
+
+.education-title {
+  color: #f8d7ef;
+  margin-bottom: 50px;
+}
+
+.education-title::after {
+  background: #38bdf8;
+}
+
+.education-grid {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 34px;
+}
+
+.education-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 32px 24px;
+  border-radius: 24px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.education-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.edu-logo {
+  width: 125px;
+  height: 125px;
+  object-fit: contain;
+  background: white;
+  padding: 14px;
+  border-radius: 18px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.25);
+}
+
+.education-card h3 {
+  color: #f8d7ef;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  line-height: 1.25;
+  margin-bottom: 18px;
+}
+
+.degree-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.10);
+  color: #d9f99d;
+  padding: 10px 24px;
+  border-radius: 999px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.education-card h4 {
+  color: #f9a8d4;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.edu-date {
+  color: #86efac !important;
+  font-size: 18px !important;
+  margin-bottom: 10px;
+}
+
+.edu-location {
+  color: #a7f3d0 !important;
+  font-size: 17px !important;
+  margin-bottom: 16px;
+}
+
+.edu-thesis {
+  color: #dbeafe !important;
+  font-size: 14.5px !important;
+  line-height: 1.6;
+}
+
 /* Projects */
 .project-grid {
   display: grid;
@@ -375,6 +468,14 @@ footer p {
 
   .about-box p {
     font-size: 16.5px;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education-card h3 {
+    font-size: 25px;
   }
 
   .project-grid {
